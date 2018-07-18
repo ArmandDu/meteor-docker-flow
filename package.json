@@ -1,0 +1,22 @@
+{
+  "name": "app-name",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "meteor run --settings dev-settings.json",
+    "flow": "flow",
+    "deploy": "docker-deploy",
+    "build": "meteor build --directory build/"
+  },
+  "config": {
+    "docker": {
+      "imageName": ""
+    }
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "docker-deploy": "0.0.2",
+    "flow-bin": "0.71.0"
+  }
+}
